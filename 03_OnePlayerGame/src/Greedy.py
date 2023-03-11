@@ -36,12 +36,12 @@ def greedy_action(state: GreedyMazeState) -> int:
 
 def play_game(seed: int = const.RANDOM_SEED):
     state = GreedyMazeState(seed)
-    print(state)
+    # print(state)
 
     while not state.is_done():
         state.advance(greedy_action(state))
-        print(state)
-
+        # print(state)
+    print(f'{state.__class__} {state.game_score}')
 
 def test_ai_score(game_number: int):
     # 乱数生成器のシードを設定

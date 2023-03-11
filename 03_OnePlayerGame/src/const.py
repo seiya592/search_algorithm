@@ -1,7 +1,7 @@
-H = 3
-W = 4
-END_TURN = 4
-RANDOM_SEED = 231983464
+H = 30
+W = 30
+END_TURN = 50
+RANDOM_SEED = 23198364
 DX = (0, 0, 1, -1)
 DY = (1, -1, 0, 0)
 INF = 10**18

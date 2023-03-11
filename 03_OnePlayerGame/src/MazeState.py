@@ -93,12 +93,12 @@ def random_action(state: MazeState):
 
 def play_game(seed: int = const.RANDOM_SEED):
     state = MazeState(seed)
-    print(state)
+    # print(state)
 
     while not state.is_done():
         state.advance(random_action(state))
-        print(state)
-
+        # print(state)
+    print(f'{state.__class__} {state.game_score}')
 
 def test_ai_score(game_number: int):
     # 乱数生成器のシードを設定
