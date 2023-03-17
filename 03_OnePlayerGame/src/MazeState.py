@@ -16,7 +16,7 @@ class MazeState:
     """
     数字集め迷路クラス
     """
-    _points: list[list[int]]
+    # _points: list[list[int]]
     _turn: int
     character: Coord
     game_score: int

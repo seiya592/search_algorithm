@@ -110,7 +110,7 @@ def play_game_time(seed: int = const.RANDOM_SEED):
     # print(state)
 
     while not state.is_done():
-        state.advance(beam_search_action_with_time_threshold(state, 5, const.END_TURN, 100))
+        state.advance(beam_search_action_with_time_threshold(state, 5, const.END_TURN, 10))
         # print(state)
     print(f'{state.__class__} {state.game_score}')
 
